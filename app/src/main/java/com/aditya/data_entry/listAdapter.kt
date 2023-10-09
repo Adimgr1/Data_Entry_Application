@@ -25,7 +25,7 @@ class listAdapter(private val listOfContact:List<item_content>):RecyclerView.Ada
     }
 
     override fun onBindViewHolder(holder: itemViewHolder, position: Int) {
-        holder.img.setImageResource(listOfContact[position].img)
+        holder.img.setImageURI(listOfContact[position].img)
         holder.name.text=(listOfContact[position].txt1)
         holder.number.text=(listOfContact[position].txt2)
 
